@@ -1,41 +1,19 @@
 # 100 Programming Languages in 100 Days
 
-This repository is a template to allow you to track your progress on a [misguided quest to write code in 100 different programming languages](https://log.schemescape.com/posts/programming-languages/100-languages.html) (specifically by solving the first 100 [Project Euler](https://projecteuler.net/) problems), maybe even in 100 (almost certainly non-consecutive) days.
+This repository is to track my progress on a [misguided quest to write code in 100 different programming languages](https://log.schemescape.com/posts/programming-languages/100-languages.html) (specifically by solving the first 100 [Project Euler](https://projecteuler.net/) problems), maybe even in 100 (almost certainly non-consecutive) days. Get [nerd-sniped](https://xkcd.com/356/).
 
-**Interested in joining an insane challenge?** Use this repository as a template to get started tracking your progress.
+**Interested in joining an insane challenge?** Use [this repository](https://github.com/NathanielJS1541/100_languages_template) as a template to get started tracking your progress.
 
 ## Credit
 
-I'd like to be clear that I didn't create this challenge, for that you'd have to thank (or blame...) [@jaredkrinke](https://github.com/jaredkrinke). I just wanted to create an easier to use template for other people to try out the challenge.
-
-## Motivations
-
-I wanted to try createing a template repository, as I've never made one before. And hey, everyone's gotta start somewhere right?
-
-*But [the original 100-languages](https://github.com/jaredkrinke/100-languages) repository can just be forked!*
-
-Yeah, but a fork doesn't really feel right for that because your first step will just be to delete all of their work. It feels like a template would be better.
-
-Besides, I've already populated the problems with links too.
-
-This repo is a fork of the original to keep the credit going to the right place, but is (hopefully) a bit more convenient as a starting point.
-
-## Getting Started
-
-1. Make an account on [Project Euler](https://projecteuler.net/).
-2. Choose a challenge and a programming language.
-3. Enter the language (with a link to the language's page) in the "Language" column of the table in the [progress section](#progress).
-4. Go to the relevant folder within [src](./src/) (linked in the "Solution Folder" column), which should already be named and organised and get started!
-5. Once you've finished, commit your changes and tick the box in the "Completed" column.
-6. Rinse and repeat!
-
-Each challenge has its own folder, so if you want to write your notes, add pictures or write build scripts etc, it is all contained under a folder. There's also a blank README.md file which should already have a link to the challenge homepage in it which you can update as you see fit.
+Thank (or blame) [@jaredkrinke](https://github.com/jaredkrinke) for the challenge.
+Thank [NathanielJS1541](https://github.com/NathanielJS1541/) for the template.
 
 ## Progress
 
 | **Challenge No.** |                                   **Problem**                                   |                                         **Solution Folder**                                         | **Language** |        **Completed**       |
 |------------------:|:-------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|:------------:|:--------------------------:|
-| 001               | [Multiples of 3 or 5](https://projecteuler.net/problem=1)                       | [001_Multiples_of_3_or_5](./src/001_Multiples_of_3_or_5/)                                           |              | <ul><li>   -[ ] </li></ul> |
+| 001               | [Multiples of 3 or 5](https://projecteuler.net/problem=1)                       | [001_Multiples_of_3_or_5](./src/001_Multiples_of_3_or_5/)                                           | [Fennel](https://fennel-lang.org) | <ul><li>   -[X] </li></ul> |
 | 002               | [Even Fibonacci Numbers](https://projecteuler.net/problem=2)                    | [002_Even_Fibonacci_Numbers](./src/002_Even_Fibonacci_Numbers/)                                     |              | <ul><li> -[ ]   </li></ul> |
 | 003               | [Largest Prime Factor](https://projecteuler.net/problem=3)                      | [003_Largest_Prime_Factor](./src/003_Largest_Prime_Factor/)                                         |              | <ul><li> -[ ]   </li></ul> |
 | 004               | [Largest Palindrome Product](https://projecteuler.net/problem=4)                | [004_Largest_Palindrome_Product](./src/004_Largest_Palindrome_Product/)                             |              | <ul><li> -[ ]   </li></ul> |
@@ -136,6 +114,3 @@ Each challenge has its own folder, so if you want to write your notes, add pictu
 | 099               | [Largest Exponential](https://projecteuler.net/problem=99)                      | [099_Largest_Exponential](./src/099_Largest_Exponential/)                                           |              | <ul><li> -[ ]   </li></ul> |
 | 100               | [Arranged Probability](https://projecteuler.net/problem=100)                    | [100_Arranged_Probability](./src/100_Arranged_Probability/)                                         |              | <ul><li> -[ ]   </li></ul> |
 
-## *Please, tell me you didn't do this by hand!*
-
-Of course not! I'm a software developer and by that I mean lazy. I'd much rather spend 20 minutes writing scripts to do something for me than 10 minutes doing data entry by hand! You can find these in the [scripts folder](./scripts/) if you'd like to expand this to add more challenges.
