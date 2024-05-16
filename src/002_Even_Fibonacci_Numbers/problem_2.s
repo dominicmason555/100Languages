@@ -11,7 +11,8 @@ main:
         mov     x29, sp
                                         // Solve the problem, put it in w1
         mov     w0, #3                  // Load Input
-        mov     x1, #40000                  // Load Input
+        mov     w1, #2304               // Lower 16 bits of 4 million
+        movk    w1, #61, lsl #16        // Upper 16 bits of 4 million
         bl      loop
         mov     w1, w0
 
@@ -23,7 +24,5 @@ main:
         ldp     x29, x30, [sp], #16     // Clean stack
         ret                             // Return 0
 
-.L.str.num:
-        .asciz  "%d\n"
 .L.str.ans:
         .asciz  "Answer: %d\n"
