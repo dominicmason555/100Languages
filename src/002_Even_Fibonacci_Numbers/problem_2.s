@@ -9,7 +9,7 @@ fact_start:
 fact_1:
         add     x3, x3, x4              // Add terms, store in x3
         tst     x3, #1                  // Test if lowest bit is high (odd)
-        beq     fact_1_end              // If odd, skip to 4 million test
+        bne     fact_1_end              // If odd, skip to 4 million test
         add     x5, x5, x3              // Else, add term to sum
 
 fact_1_end:
@@ -19,7 +19,7 @@ fact_1_end:
 fact_2:
         add     x4, x4, x3              // Add terms, store in x4
         tst     x4, #1                  // Test if lowest bit is high (odd)
-        beq     fact_2_end              // If odd, skip to 4 million test
+        bne     fact_2_end              // If odd, skip to 4 million test
         add     x5, x5, x4              // Else, add term to sum
 
 fact_2_end:
@@ -35,9 +35,8 @@ main:
         stp     x29, x30, [sp, #-16]!   // Prepare stack
         mov     x29, sp
 
-        //mov     x0, #0x900              // Lower 16 bits of 4 million
-        //movk    x0, #0x3D, lsl #16      // Upper 16 bits of 4 million
-        mov     x0, #46000
+        mov     x0, #0x900              // Lower 16 bits of 4 million
+        movk    x0, #0x3D, lsl #16      // Upper 16 bits of 4 million
         bl      fact_start              // Call factorial
 
         mov     x1, x0                  // Move result to be printed

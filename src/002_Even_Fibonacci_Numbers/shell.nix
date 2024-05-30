@@ -8,6 +8,7 @@ pkgs.mkShell {
     name = "problem_2";
     buildInputs = [
         cross.buildPackages.gcc
+        cross.buildPackages.gdb
         # cross.buildPackages.glibc.static - Incompatible?
     ];
     nativeBuildInputs = with pkgs.buildPackages; [
