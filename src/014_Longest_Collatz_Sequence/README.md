@@ -2,7 +2,7 @@
 
 The following iterative sequence is defined for the set of positive integers:
 
-$n \to n/2$ ($n$ is even)
+$n \to n/2$ ($n$ is even)  
 $n \to 3n + 1$ ($n$ is odd)
 
 Using the rule above and starting with $13$, we generate the following sequence:
