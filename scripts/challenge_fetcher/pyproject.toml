@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "challenge_fetcher"
+description = "A simple tool to initialise the folder and README structure in this repo by scraping the Project Euler website."
+authors = ["Nathaniel Struselis <nathaniel.struselis@hotmail.co.uk>"]
+readme = "README.md"
+license = "AGPL-3.0-only"
+package-mode = false
+version = "0.2.0"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+html5lib = "^1.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pylint = "^3.2.5"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
