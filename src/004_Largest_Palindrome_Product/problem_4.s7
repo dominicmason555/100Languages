@@ -12,5 +12,6 @@
 (define (largest-palindrome-product n)
   (doubleLoop n n n 0))
 
-(largest-palindrome-product 999)
+(let ((answer (largest-palindrome-product 999)))
+  (format #t "Answer: ~D~%" answer))
 

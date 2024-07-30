@@ -12,5 +12,8 @@ run:
 qdebug:
     qemu-riscv64 -g 1234 ./problem_6 & riscv64-unknown-linux-gnu-gdb --tui -x init.gdb
 
+clean:
+    rm ./problem_6
+
 build_and_run: build run
 
