@@ -1,7 +1,7 @@
-# 100 Programming Languages in 100 Days
+# 100 Programming Languages for the first 100 Project Euler Problems
 
 This repository is to track my progress in imitating
-[@jaredkrinke](https://github.com/jaredkrinke)'s
+[jaredkrinke](https://github.com/jaredkrinke)'s
 [misguided quest to write code in 100 different programming languages](https://log.schemescape.com/posts/programming-languages/100-languages.html),
 specifically by solving the first 100
 [Project Euler](https://projecteuler.net/) problems. Get
@@ -13,31 +13,51 @@ as a template to get started tracking your progress.
 
 ## Credit
 
-Thank (or blame) [@jaredkrinke](https://github.com/jaredkrinke) for the challenge.
+Thank (or blame) [jaredkrinke](https://github.com/jaredkrinke) for the
+challenge.
 Thank [NathanielJS1541](https://github.com/NathanielJS1541/) for the repository
 template.
 
-## Getting Started
+## Running my Solutions
 
-1. (Optional) Make an account on [Project Euler](https://projecteuler.net/) if you'd like to submit your answers there to check them.
+For most of the solutions, if you have [Nix](https://nixos.org/download/)
+installed, you should be able to run `nix-shell` in the problem directory to
+make the dependencies available, then run `just` to run the solution. If you
+have [direnv](https://direnv.net/) installed, then after typing `direnv allow`
+in the solution directory, the `nix-shell` command should be automatically run
+whenever you enter that solution directory.
+
+## Getting Started / Doing the Challenge
+
+1. (Optional) Make an account on [Project Euler](https://projecteuler.net/) if
+   you'd like to submit your answers there to check them.
 2. Choose a challenge and a programming language.
-3. Enter the language (with a link to the language's page) in the "Language" column of the table in the [progress section](#progress).
-4. Go to the relevant folder within [src](./src/) (linked in the "Challenge Folder" column) and get started! The `README.md` file *should* contain all the information you need for the challenge. If it doesn't, let me know by opening an issue.
-5. Once you've finished, commit your changes and change the `:white_square_button:` in the "Completed" column to a `:white_check_mark:`. Unfortunately interactive checkboxes can't be used in a table in GitHub-flavoured markdown.
+3. Enter the language (with a link to the language's page) in the "Language"
+   column of the table in the [progress section](#progress).
+4. Go to the relevant folder within [src](./src/) (linked in the "Challenge
+   Folder" column) and get started! The `README.md` file *should* contain all
+   the information you need for the challenge. If it doesn't, let me know by
+   opening an issue.
+5. Once you've finished, commit your changes and change the
+   `:white_square_button:` in the "Completed" column to a `:white_check_mark:`.
+   Unfortunately interactive checkboxes can't be used in a table in
+   GitHub-flavoured markdown.
 6. (Optional) submit your answer on [Project Euler](https://projecteuler.net/).
 7. Move on to the next challenge and repeat!
 
 ## Progress
 
-| **Challenge Folder**                                                                                | **Language**                                                                    | **Completed**                                                                    |
+Each check mark is a link to the solution source file.
+
+| **Challenge Folder**                                                                                | **Language**                                                                    | **Solution**                                                                     |
 |:----------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------:|
 | [001_Multiples_of_3_or_5](./src/001_Multiples_of_3_or_5/)                                           | [Fennel](https://fennel-lang.org)                                               | [:white_check_mark:](./src/001_Multiples_of_3_or_5/problem_1.fnl)                |
-| [002_Even_Fibonacci_Numbers](./src/002_Even_Fibonacci_Numbers/)                                     | [ARM64 Assembly](https://developer.arm.com/documentation/102374/latest/) (Pi 4) | [:white_check_mark:](./src/002_Even_Fibonacci_Numbers/problem_2.s)               |
+| [002_Even_Fibonacci_Numbers](./src/002_Even_Fibonacci_Numbers/)                                     | [ARM64 Assembly](https://developer.arm.com/documentation/102374/latest/)        | [:white_check_mark:](./src/002_Even_Fibonacci_Numbers/problem_2.s)               |
 | [003_Largest_Prime_Factor](./src/003_Largest_Prime_Factor/)                                         | [Pharo Smalltalk](https://pharo.org)                                            | [:white_check_mark:](./src/003_Largest_Prime_Factor/Integer-hundredLanguages.st) |
-| [004_Largest_Palindrome_Product](./src/004_Largest_Palindrome_Product/)                             | [S7 Scheme](https://ccrma.stanford.edu/software/snd/snd/s7.html)                | [:white_check_mark:](./src/004_Largest_Palindrome_Product/problem_4.s7)          |
+| [004_Largest_Palindrome_Product](./src/004_Largest_Palindrome_Product/)                             | [S7 Scheme](https://ccrma.stanford.edu/software/snd/snd/s7.html)                | [:white_check_mark:](./src/004_Largest_Palindrome_Product/problem_4.scm)         |
 | [005_Smallest_Multiple](./src/005_Smallest_Multiple/)                                               | [VHDL](https://en.wikipedia.org/wiki/VHDL)                                      | [:white_check_mark:](./src/005_Smallest_Multiple/problem_5.vhdl)                 |
 | [006_Sum_Square_Difference](./src/006_Sum_Square_Difference/)                                       | [RISC-V 64 Assembly](https://riscv.org/technical/specifications/)               | [:white_check_mark:](./src/006_Sum_Square_Difference/problem_6.s)                |
-| [007_10001st_Prime](./src/007_10001st_Prime/)                                                       |                                                                                 | :white_square_button:                                                            |
+| [007_10001st_Prime](./src/007_10001st_Prime/)                                                       | [SYCL C++](https://github.com/AdaptiveCpp/AdaptiveCpp)                          | [:white_check_mark:](./src/007_10001st_Prime/problem_7.cpp)                      |
 | [008_Largest_Product_in_a_Series](./src/008_Largest_Product_in_a_Series/)                           |                                                                                 | :white_square_button:                                                            |
 | [009_Special_Pythagorean_Triplet](./src/009_Special_Pythagorean_Triplet/)                           |                                                                                 | :white_square_button:                                                            |
 | [010_Summation_of_Primes](./src/010_Summation_of_Primes/)                                           |                                                                                 | :white_square_button:                                                            |
